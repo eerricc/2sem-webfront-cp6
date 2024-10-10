@@ -1,0 +1,39 @@
+
+
+.home-section{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+    background-color: var(--);
+}
+
+.home-title{
+    font-size: 3rem;
+    margin: 4rem;
+    color: var(--);
+}
+
+.home-container{
+    margin: 10rem;
+    width: 93rem;
+    height: 30rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home-img{
+    width: 50%;  
+    height: 100%;
+    border-radius: 2rem;
+}
+
+.home-text{
+    color: var(--);
+    width: 40%;
+    line-height: 2.5rem;
+    margin: auto;
+    text-align: center;
+    font-size: 1.6rem;
+}
