@@ -1,0 +1,58 @@
+.registration-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    background-color: var(--);
+}
+
+.registration-title{
+    font-size: 2rem;
+    margin: 2rem;
+    color: var(--);
+}
+
+.registration-form{
+    width: 40%;
+    height: 30rem;
+}
+
+.registration-input{
+    width: 100%;
+    height: 3rem;
+    margin: 1rem 0;
+    background-color: var(--);
+    color: var(--);
+    border: 0.1rem solid var(--);
+    border-radius: 1rem;
+}
+
+
+.registration-submit-btn{
+    display: block;
+    min-width: 30%;
+    height: 2rem;
+    margin: 2rem auto;
+    font-size: 1rem;
+    background-color: var(--);
+    color: var(--);
+    border: 0.1rem solid var(--);
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.registration-linktext{
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.registration-list{
+    list-style: none;
+}
+
+.registration-utilities{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
