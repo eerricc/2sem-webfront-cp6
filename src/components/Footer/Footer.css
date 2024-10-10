@@ -1,0 +1,105 @@
+
+.footer-section{
+    margin-top: auto;
+    padding: 2rem;
+    background-color: var(--);
+}
+
+.footer-bar{
+    margin: 2rem auto;
+    width: 60%;
+    border-color: var(--);
+    
+}
+
+.footer-container{
+    display: flex;
+    justify-content: center;
+}
+
+.footer-container-btn{
+    display: inline-block;
+    height: 2rem;
+    width: 2rem;
+    margin: 0 0.5rem;
+    overflow: hidden;
+    border-radius: 5rem;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    background-color: var(--);
+    color: var(--);
+}
+.footer-container-btn:hover{
+    width: 10rem;
+}
+
+.footer-icon{
+    display: inline-block;
+    height: 2rem;
+    width: 2rem;
+    text-align: center;
+    border-radius: 5rem;
+    box-sizing: border-box;
+    line-height: 2.5rem;
+    transition: all 0.3s ease-out;
+}
+.footer-container-btn:nth-child(1):hover .footer-icon{
+    background: #4267B2;
+}
+.footer-container-btn:nth-child(2):hover .footer-icon{
+    background: #1DA1F2;
+}
+.footer-container-btn:nth-child(3):hover .footer-icon{
+    background: #E1306C;
+}
+.footer-container-btn:nth-child(4):hover .footer-icon{
+    background: #333;
+}
+.footer-container-btn:nth-child(5):hover .footer-icon{
+    background: #ff0000;
+}
+
+.footer-icon{
+    transition: all 0.3s ease-out;
+}
+.footer-icon:hover{
+    color: var(--);
+}
+
+.footer-span{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: 1rem;
+    transition: all 0.3s ease-out;
+}
+
+.footer-container-btn:nth-child(1):hover .footer-span{
+    color: #4267B2;
+}
+.footer-container-btn:nth-child(2):hover .footer-span{
+    color: #1DA1F2;
+}
+.footer-container-btn:nth-child(3):hover .footer-span{
+    color: #E1306C;
+}
+.footer-container-btn:nth-child(4):hover .footer-span{
+    color: #333;
+}
+.footer-container-btn:nth-child(5):hover .footer-span{
+    color: #ff0000;
+}
+
+.footer-copyright{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 2rem;
+    margin: 1rem;
+    color: var(--);
+}
+
+.footer-link{
+    text-decoration: none;
+    color: var(--);
+}

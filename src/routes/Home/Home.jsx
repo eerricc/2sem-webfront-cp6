@@ -13,7 +13,7 @@ const Home = () => {
 
     return (
         <section className="home-section">
-            <h1 className="home-title">Fórmula E - Ecologia Moderna</h1>
+            <h1 className="home-title">fluf - plushies & pillows</h1>
             <Carousel slides={slides} />
 
             <div className='home-container'>

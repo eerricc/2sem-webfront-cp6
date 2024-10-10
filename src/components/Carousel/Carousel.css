@@ -1,0 +1,54 @@
+.carousel-section{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 30rem;
+}
+
+.carousel-img{
+    border-radius: 0.5rem;
+    width: 100%;
+    height: 100%;
+
+}
+.carousel-img-hidden{
+    display: none;
+}
+
+.carousel-arrow{
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    color: var(--);
+    cursor: pointer;
+    border-radius: 100%;
+}
+
+.arrow-left{
+    left: 1rem;
+}
+.arrow-right{
+    right: 1rem;
+}
+
+.carousel-span{
+    display: flex;
+    position: absolute;
+    bottom: 1rem;
+}
+
+.carousel-btn{
+    background-color: var(--);
+    height: 0.5rem;
+    width: 0.5rem;
+    border-radius: 100%;
+    border: none;
+    outline: none;
+    margin: 0 0.2rem;
+    cursor: pointer;
+}
+.carousel-btn-inactive{
+    background-color: var(--);
+}
