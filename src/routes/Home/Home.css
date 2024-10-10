@@ -1,5 +1,4 @@
-
-.home-section{
+.home-section {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
@@ -7,13 +6,14 @@
     background-color: var(--bg1);
 }
 
-.home-title{
+.home-title {
     font-size: 3rem;
     margin: 4rem;
     color: var(--prim);
+    text-align: center; /* Para centralizar em telas menores */
 }
 
-.home-container{
+.home-container {
     margin: 10rem;
     width: 100%;
     max-width: 93rem;
@@ -21,15 +21,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 2rem; /* Adiciona espaço entre a imagem e o texto */
 }
 
-.home-img{
+.home-img {
     width: 40%; 
     height: 100%;
     border-radius: 2rem;
+    object-fit: cover; /* Para garantir que a imagem preencha o espaço corretamente */
 }
 
-.home-text{
+.home-text {
     color: var(--second);
     width: 40%;
     line-height: 2.5rem;
@@ -38,16 +40,44 @@
     font-size: 1.6rem;
 }
 
-@media (width <= 768px) {
-    
-    .home-container{
+/* Estilos responsivos para telas menores */
+@media (max-width: 768px) {
+    .home-container {
         flex-direction: column;
+        margin: 4rem 0; /* Ajusta as margens para telas menores */
+        height: auto; /* Permite que a altura se ajuste automaticamente */
+        gap: 1rem; /* Diminui o espaço entre os elementos */
     }
-    
-    .home-text{
+
+    .home-text {
         font-size: 1.2rem;
-        line-height: normal;
-        width: 100%;
-        margin: 1em;
+        line-height: 1.8rem;
+        width: 90%; /* Ajusta o tamanho do texto */
+        margin: 1rem 0; /* Adiciona espaçamento em cima e embaixo */
+    }
+
+    .home-img {
+        width: 80%; /* Reduz o tamanho da imagem em telas menores */
+        height: auto; /* Ajusta a altura automaticamente */
+    }
+}
+
+@media (max-width: 480px) {
+    .home-title {
+        font-size: 2rem; /* Reduz o tamanho do título em telas muito pequenas */
+    }
+
+    .home-container {
+        margin: 2rem 0;
+    }
+
+    .home-text {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .home-img {
+        width: 100%; /* Imagem ocupa toda a largura em telas muito pequenas */
+        border-radius: 1rem; /* Reduz o border-radius em telas menores */
     }
 }

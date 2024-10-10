@@ -14,6 +14,7 @@
     animation: slideIn 1s ease forwards;
     /* Usar unidade relativa para ajustar o tamanho conforme a tela */
     font-size: calc(1.5rem + 1vw);
+    color: var(--prim);
 }
 
 .products-container {
@@ -25,6 +26,7 @@
     justify-content: center;
     margin: 1rem;
     padding: 0 1rem;
+    animation: slideIn 1s ease forwards;
 }
 
 @keyframes slideIn {

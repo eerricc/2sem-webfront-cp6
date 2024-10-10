@@ -49,12 +49,12 @@ const About =()=>{
                     <div className='about-card-container' key={index}>
                         <div className='about-card-card'>
                             <div className='about-card-front'>
-                                <h2>{card.title}</h2> <br />
-                                <p>{card.content}</p>
+                                <h2 className='about-card-front-title'>{card.title}</h2> <br />
+                                <p className='about-card-front-text'>{card.content}</p>
                             </div>
                             <div className='about-card-back'>
-                                <h2>{card.comparisonTitle}</h2> <br />
-                                <p>{card.comparisonText}</p>
+                                <h2 className='about-card-back-title'>{card.comparisonTitle}</h2> <br />
+                                <p className='about-card-back-text'>{card.comparisonText}</p>
                             </div>
                         </div>
                     </div>

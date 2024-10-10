@@ -1,22 +1,16 @@
 .about-section {
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
     align-items: center;
     background-color: var(--bg1);
-    /* 
-    background-image: url('../../assets/');
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat;
-    */
+    padding: 2rem;
+    min-height: 100vh;
 }
-
 
 .about-title {
     text-align: center;
     margin: 2rem;
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: var(--prim);
     animation: slideIn 1s ease forwards;
 }
@@ -24,23 +18,11 @@
 .about-container {
     width: 80%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); /* Aumenta a largura mínima dos cards */
+    gap: 2rem; /* Aumenta o espaço entre os cards */
     justify-content: center;
     margin: 1rem;
 }
-
-@keyframes slideIn {
-    0% {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
 
 .about-card-container {
     padding: 2em;
@@ -54,23 +36,18 @@
     word-wrap: break-word;
     align-items: center;
     justify-content: center;
-    height: 12rem;
+    height: 15rem; /* Aumenta a altura dos cards se necessário */
     width: 100%; 
     animation: slideIn 0.5s ease forwards;
     opacity: 0;
 }
 
-.about-card-container.visible {
-    opacity: 1;
-}
-
 .about-card-card {
     width: 100%;
     height: 100%;
-    border-radius: 10px;
-    transform-style: preserve-3d;
-    transition: all 0.8s ease;
     position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
 }
 
 .about-card-card:hover {
@@ -79,14 +56,63 @@
 
 .about-card-front, .about-card-back {
     position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
-    border-radius: 1rem;
     backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: var(--bg2);
+    color: var(--terti);
 }
 
 .about-card-back {
     transform: rotateY(180deg);
+    background-color: var(--second);
+}
+
+.about-card-front-title, .about-card-back-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.about-card-front-text, .about-card-back-text {
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    .about-card-container {
+        height: 200px;
+    }
+
+    .about-card-front-title, .about-card-back-title {
+        font-size: 1.2rem;
+    }
+
+    .about-card-front-text, .about-card-back-text {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-title {
+        font-size: 2rem;
+    }
+
+    .about-card-container {
+        height: 180px;
+    }
+
+    .about-card-front-title, .about-card-back-title {
+        font-size: 1rem;
+    }
+
+    .about-card-front-text, .about-card-back-text {
+        font-size: 0.8rem;
+    }
 }
