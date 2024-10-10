@@ -1,22 +1,22 @@
 
-
 .home-section{
     display: flex;
     flex-direction: column;
     flex-grow: 1;
     align-items: center;
-    background-color: var(--);
+    background-color: var(--bg1);
 }
 
 .home-title{
     font-size: 3rem;
     margin: 4rem;
-    color: var(--);
+    color: var(--prim);
 }
 
 .home-container{
     margin: 10rem;
-    width: 93rem;
+    width: 100%;
+    max-width: 93rem;
     height: 30rem;
     display: flex;
     justify-content: space-between;
@@ -24,16 +24,30 @@
 }
 
 .home-img{
-    width: 50%;  
+    width: 40%; 
     height: 100%;
     border-radius: 2rem;
 }
 
 .home-text{
-    color: var(--);
+    color: var(--second);
     width: 40%;
     line-height: 2.5rem;
     margin: auto;
     text-align: center;
     font-size: 1.6rem;
+}
+
+@media (width <= 768px) {
+    
+    .home-container{
+        flex-direction: column;
+    }
+    
+    .home-text{
+        font-size: 1.2rem;
+        line-height: normal;
+        width: 100%;
+        margin: 1em;
+    }
 }

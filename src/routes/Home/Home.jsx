@@ -18,14 +18,21 @@ const Home = () => {
 
             <div className='home-container'>
                 <p className='home-text'>
-                    textao
+                Explore nossa coleção única de plushies, perfeitos para adicionar charme e aconchego ao seu dia a dia! 
+                Cada pelúcia é feita com materiais de alta qualidade, garantindo uma textura macia e um toque suave, 
+                que convida ao abraço. Com designs variados, desde personagens fofos até criaturas únicas, 
+                nossos plushies são companheiros ideais para crianças e adultos. Seja para decorar um ambiente ou presentear alguém especial, 
+                eles trazem alegria e conforto em cada detalhe
                 </p>
                 <img src={teste} alt="" className='home-img'/>
             </div>
             <div className='home-container'>
                 <img src={teste} alt="" className='home-img'/>
                 <p className='home-text'>
-                    textao
+                Nossas almofadas combinam estilo e funcionalidade em um só produto! Feitas com enchimento de alta densidade e capas super macias, 
+                elas oferecem o suporte ideal para momentos de descanso. Disponíveis em uma variedade de cores, padrões e formatos, 
+                nossas pillows são projetadas para complementar qualquer espaço, desde o quarto até a sala de estar. 
+                Transforme seu ambiente com peças que aliam conforto e design, trazendo não só beleza, mas também um toque de aconchego para o seu lar
                 </p>
             </div>
         </section>

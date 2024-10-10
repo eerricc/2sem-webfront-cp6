@@ -2,13 +2,13 @@
 .footer-section{
     margin-top: auto;
     padding: 2rem;
-    background-color: var(--);
+    background-color: var(--bg1);
 }
 
 .footer-bar{
     margin: 2rem auto;
     width: 60%;
-    border-color: var(--);
+    border-color: var(--bg2);
     
 }
 
@@ -26,8 +26,8 @@
     border-radius: 5rem;
     cursor: pointer;
     transition: all 0.3s ease-out;
-    background-color: var(--);
-    color: var(--);
+    background-color: var(--terti);
+    color: var(--white);
 }
 .footer-container-btn:hover{
     width: 10rem;
@@ -62,9 +62,6 @@
 .footer-icon{
     transition: all 0.3s ease-out;
 }
-.footer-icon:hover{
-    color: var(--);
-}
 
 .footer-span{
     font-size: 1.5rem;
@@ -96,10 +93,10 @@
     align-items: center;
     line-height: 2rem;
     margin: 1rem;
-    color: var(--);
+    color: var(--second);
 }
 
 .footer-link{
     text-decoration: none;
-    color: var(--);
+    color: var(--second);
 }
