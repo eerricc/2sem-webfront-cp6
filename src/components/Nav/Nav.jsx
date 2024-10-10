@@ -6,7 +6,6 @@ import {Link} from 'react-router-dom'
 //hook
 import { useState } from 'react'
 
-import Logo from '../../assets/logo1.png'
 
 const Nav =()=>{
     
