@@ -1,0 +1,115 @@
+.products-section {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background-color: var(--bg1); /* Cor de fundo definida pela variável */
+    align-items: center;
+    padding: 2rem 1rem;
+}
+
+.products-title {
+    text-align: center;
+    font-size: 2rem;
+    margin: 2rem;
+    animation: slideIn 1s ease forwards;
+    /* Usar unidade relativa para ajustar o tamanho conforme a tela */
+    font-size: calc(1.5rem + 1vw);
+}
+
+.products-container {
+    width: 90%;
+    max-width: 1200px; /* Limite de largura para telas grandes */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 2rem; /* Espaçamento entre os cards */
+    justify-content: center;
+    margin: 1rem;
+    padding: 0 1rem;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.products-card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg2); /* Cor de fundo dos cards */
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 1rem;
+    transition: transform 0.3s;
+}
+
+.products-card:hover {
+    transform: translateY(-10px); /* Efeito de hover */
+}
+
+.products-card-title {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: var(--terti);
+    font-size: calc(1rem + 0.5vw);
+}
+
+.products-img img {
+    max-width: 100%; /* Garantir que a imagem se ajuste ao card */
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.products-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--terti); /* Cor de destaque para o preço */
+    margin-top: 5px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .products-container {
+        grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr)); /* Reduzir as colunas em telas menores */
+        gap: 1.5rem; /* Reduzir o gap em telas menores */
+    }
+
+    .products-card {
+        padding: 0.8rem;
+    }
+
+    .products-card-title {
+        font-size: 1.2rem; /* Ajustar o tamanho do título */
+    }
+
+    .products-text {
+        font-size: 1rem; /* Ajustar tamanho do preço */
+    }
+}
+
+@media (max-width: 480px) {
+    .products-container {
+        grid-template-columns: 1fr; /* Cards em uma única coluna em telas muito pequenas */
+        gap: 1rem; /* Reduzir o gap ainda mais */
+    }
+
+    .products-card {
+        padding: 0.5rem;
+    }
+
+    .products-card-title {
+        font-size: 1rem;
+    }
+
+    .products-text {
+        font-size: 0.9rem; /* Ajustar tamanho do preço */
+    }
+}

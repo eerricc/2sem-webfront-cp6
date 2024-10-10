@@ -15,7 +15,7 @@
 
 .about-title {
     text-align: center;
-    margin: 2rem 0;
+    margin: 2rem;
     font-size: 2rem;
     color: var(--prim);
     animation: slideIn 1s ease forwards;
@@ -46,7 +46,7 @@
     padding: 2em;
     border: 0.1rem solid var(--prim);
     border-radius: 1rem;
-    background-color: var(--second);
+    background-color: var(--bg2);
     text-align: center;
     color: var(--terti);
     display: flex;
